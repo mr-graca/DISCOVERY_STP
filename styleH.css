@@ -1,0 +1,219 @@
+/* Reset e configurações globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: aquamarine;
+    color: #333;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #008080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navegação */
+nav {
+    background-color: #006666;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #004d4d;
+}
+
+/* Seções gerais */
+section {
+    border: 2px solid aquamarine;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Home */
+#home {
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 40px;
+    background-color: aquamarine;
+
+    
+}
+
+#home h2 {
+    text-align: center;
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    font-style: italic;
+    flex: 1;
+    text-align: justify;
+    height: 400px;
+    font-size: 20px;
+    background-color: #006666;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagemhome {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemhome img {
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 20px;
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagemhome img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Destinos */
+#destinations, #culture, #food, #nature, #gallery, #map {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#destinations {
+    background-color: rgb(0, 211, 141);
+}
+
+#culture {
+    background-color: rgb(26, 148, 87);
+}
+
+#food {
+    background-color: rgb(2, 82, 33);
+}
+
+#nature {
+    background-color: rgb(19, 97, 49);
+}
+
+#gallery, #map {
+    background-color: rgb(9, 71, 34);
+}
+
+#destinations h2, #culture h2, #food h2, #nature h2, #gallery h2, #map h2 {
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Lugares */
+.lugares, .mapa_img, .culimagem, .gallerry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto 100px;
+}
+
+.lugares img, .culimagem img, .gallerry img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+    #map h2{
+    font-style: italic;
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+
+}
+#map {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 610px;
+    width: 80%;
+}
+
+.mapa_img {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mapa_img img {
+    width: 420px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ 
+
+/* Descrições */
+.description, .cult {
+    max-width: 700px;
+    margin: 30px auto 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #444;
+}
+
+.cult {
+    font-size: 25px;
+    text-align: center;
+}
